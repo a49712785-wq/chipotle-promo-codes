@@ -50,6 +50,10 @@
   padding: 0;
 }
 
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   background-color: var(--bg-canvas);
   color: var(--text-main);
@@ -205,12 +209,8 @@ a:hover, a:focus-visible {
 }
 
 .hero-container {
-  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-subtle) 100%);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem;
-  margin-top: 2rem;
-  box-shadow: var(--shadow-md);
+  padding: 2.5rem 0;
+  margin-top: 1rem;
 }
 
 .best-savings-card {
@@ -303,12 +303,9 @@ a:hover, a:focus-visible {
 }
 
 .content-section {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 2.25rem;
-  margin-top: 2rem;
-  box-shadow: var(--shadow-sm);
+  padding: 2rem 0;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
 }
 
 .section-header-wrap {
@@ -564,7 +561,10 @@ tr:nth-child(even) td {
 
 @media (max-width: 640px) {
   .hero-container,
-  .content-section,
+  .content-section {
+    padding: 1.5rem 0;
+  }
+
   .bottom-line-box {
     padding: 1.25rem;
   }
