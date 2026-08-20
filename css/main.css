@@ -540,6 +540,51 @@ tr:nth-child(even) td {
   text-align: right;
 }
 
+.site-footer {
+  background-color: var(--chipotle-burgundy-dark);
+  color: var(--bg-canvas);
+  margin-top: 3rem;
+  padding: 2.5rem 0 2rem;
+  border-top: 3px solid var(--chipotle-red);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+}
+
+.footer-nav a {
+  color: #E7DFD3;
+  font-size: 0.925rem;
+  font-weight: 500;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+  color: #FFFFFF;
+}
+
+.footer-disclaimer {
+  font-size: 0.825rem;
+  line-height: 1.6;
+  color: #B8AEA1;
+  max-width: 720px;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: #9C9186;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(231, 223, 211, 0.15);
+}
+
 .toast {
   position: fixed;
   bottom: 1.5rem;
