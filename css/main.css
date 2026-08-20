@@ -66,9 +66,9 @@ body {
 }
 
 .page-wrapper {
-  max-width: 980px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 2rem;
 }
 
 .site-masthead {
