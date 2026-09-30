@@ -631,3 +631,129 @@ tr:nth-child(even) td {
     scroll-behavior: auto !important;
   }
 }
+
+/* ---- Live promo codes section (Sep 2026 restructure) ---- */
+.promo-codes-section {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2.5rem 0;
+}
+
+.section-lede {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  margin: 0 0 1.5rem;
+}
+
+.codes-table td {
+  vertical-align: middle;
+}
+
+.code-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: var(--bg-subtle);
+  border: 1px dashed var(--border-dark);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.code-chip:hover,
+.code-chip:focus-visible {
+  border-color: var(--chipotle-red);
+  background-color: var(--chipotle-red-subtle);
+  outline: none;
+}
+
+.code-chip-text {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.06em;
+  color: var(--text-main);
+}
+
+.code-chip-action {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  background-color: var(--chipotle-red);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.code-chip.copied {
+  border-style: solid;
+  border-color: var(--chipotle-poblano);
+  background-color: var(--chipotle-poblano-surface);
+}
+
+.code-chip.copied .code-chip-action {
+  background-color: var(--chipotle-poblano);
+}
+
+.codes-howto {
+  margin: 1.25rem 0 0;
+  color: var(--text-main);
+}
+
+.community-box {
+  margin-top: 1.75rem;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--status-account-text);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  background-color: var(--bg-canvas);
+}
+
+.community-title {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem;
+}
+
+.tag-community {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--status-account-text);
+  background-color: var(--status-account-bg);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+
+.community-box p {
+  margin: 0.5rem 0 0;
+  color: var(--text-muted);
+}
+
+.community-empty {
+  color: var(--text-main);
+}
+
+.codes-bridge {
+  margin: 1.5rem 0 0;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 640px) {
+  .promo-codes-section {
+    padding: 1.25rem;
+  }
+}
