@@ -747,6 +747,32 @@ tr:nth-child(even) td {
   color: var(--text-main);
 }
 
+.community-code {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.community-code-details {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.community-code-details p {
+  margin: 0 0 0.5rem;
+}
+
+.community-source {
+  font-size: 0.9rem;
+}
+
+.community-report {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
 .codes-bridge {
   margin: 1.5rem 0 0;
   font-size: 1.05rem;
