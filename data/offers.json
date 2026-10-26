@@ -1,10 +1,10 @@
 {
- "last_checked": "2026-10-25",
+ "last_checked": "2026-10-26",
  "offers": [
   {
    "active": true,
    "benefit": "Take $10 off one Build-Your-Own Chipotle order (feeds 4\u20136) when you order on chipotle.com or in the Chipotle app.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "code": "TRYBYOC",
    "featured": true,
    "headline": "$10 Off Chipotle Promo Code \u2014 Build-Your-Own Order",
@@ -18,7 +18,7 @@
   {
    "active": true,
    "benefit": "Chipotle Rewards members who show up in costume pay $6 for one entr\u00e9e, in-restaurant on October 31.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "chip": {
     "class": "status-ending",
     "text": "Oct 31 \u00b7 3 PM\u2013close"
@@ -38,7 +38,7 @@
   {
    "active": true,
    "benefit": "$0 delivery fee on digital orders of $10 or more placed on chipotle.com or in the Chipotle app on November 1.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "chip": {
     "class": "status-ending",
     "text": "Starts Nov 1"
@@ -54,7 +54,7 @@
   {
    "active": true,
    "benefit": "Join Chipotle Rewards (free) and get free chips & guac on your first order of $5 or more.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "cta": {
     "href": "#rewards-heading",
     "text": "How Rewards works"
@@ -70,7 +70,7 @@
   {
    "active": true,
    "benefit": "Verified students get 1,000 bonus points instantly with Chipotle U Rewards, then earn 12 points per $1 \u2014 20% faster than standard members.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "cta": {
     "href": "student-discount/",
     "text": "Full Chipotle U guide"
@@ -86,7 +86,7 @@
   {
    "active": true,
    "benefit": "During your birthday month, Rewards members pick one free reward: chips, guac, queso blanco, or a fountain drink.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "cta": {
     "href": "#rewards-heading",
     "text": "How Rewards works"
@@ -102,7 +102,7 @@
   {
    "active": true,
    "benefit": "A free bonus reward drops into members' Rewards wallets every month. Check your wallet before you order \u2014 most members never look.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "cta": {
     "href": "#rewards-heading",
     "text": "How Rewards works"
@@ -118,7 +118,7 @@
   {
    "active": true,
    "benefit": "Earn 10 points per $1 on every direct order. 1,625 points redeems a free entr\u00e9e; 815 points takes 50% off an entr\u00e9e; 700 points buys double protein.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "cta": {
     "href": "#rewards-heading",
     "text": "See all Rewards tiers"
@@ -134,7 +134,7 @@
   {
    "active": true,
    "benefit": "$10 off your first Chipotle order of $20 or more on Uber Eats, for new Uber Eats users.",
-   "checked": "2026-10-25",
+   "checked": "2026-10-26",
    "chip": {
     "class": "status-ending",
     "text": "Ends Oct 31"
