@@ -117,10 +117,12 @@ def main() -> int:
             if o["checked"] != last_checked:
                 warnings.append(f"offer {o['id']}: checked {o['checked']} != last_checked {last_checked}")
     code_count = sum(1 for o in active if o["kind"] == "code")
-    if code_count != 1:
+    if code_count > 1:
         warnings.append(
-            f"intro claims exactly ONE live checkout code but {code_count} active code offers exist — update the intro copy"
+            f"intro must not claim one live checkout code with {code_count} active code offers — update the intro copy"
         )
+    elif code_count == 0:
+        print("NOTE: no active checkout-code offers — intro/title must not claim a live code")
     for w in warnings:
         print("WARNING:", w)
     if errors:
@@ -152,18 +154,18 @@ def main() -> int:
 
     # 4) Intro tokens (other-offers count + today's date)
     text = replace_region(text, "<!-- INTRO-COUNT:START -->", "<!-- INTRO-COUNT:END -->",
-                          str(count - 1), "intro count")
+                          str(count), "intro count")
     text = replace_region(text, "<!-- INTRO-DATE:START -->", "<!-- INTRO-DATE:END -->",
                           ld, "intro date")
 
     # 5) Title month (title, og:title, twitter:title, schema name share the string)
-    new_title = f"Chipotle Promo Codes ({my}) — $10 Off Code, Checked Daily"
+    new_title = f"Chipotle Promo Codes ({my}) — Boorito, Free Delivery & Rewards, Checked Daily"
     text, n = re.subn(r"Chipotle Promo Codes \([A-Z][a-z]+ \d{4}\) — [^\"<]+", new_title, text)
     if n < 3:
         print(f"WARNING: title string replaced in {n} places (expected >=3)")
 
     # 6) Meta descriptions (name/og/twitter + schema description share the build template)
-    desc = (f"{count} Chipotle promo codes &amp; offers for {my} — TRYBYOC $10 off code, Boorito, "
+    desc = (f"{count} Chipotle promo codes &amp; offers for {my} — Boorito $6 entrée, $0 delivery Nov 1, "
             f"free Rewards offers and more, checked daily against Chipotle's official terms.")
     desc_json = desc.replace("&amp;", "&")
     text = re.sub(r'(<meta name="description" content=")[^"]*(")', rf"\g<1>{desc}\g<2>", text)
