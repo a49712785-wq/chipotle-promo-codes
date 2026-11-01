@@ -159,14 +159,14 @@ def main() -> int:
                           ld, "intro date")
 
     # 5) Title month (title, og:title, twitter:title, schema name share the string)
-    new_title = f"Chipotle Promo Codes ({my}) — Boorito, Free Delivery & Rewards, Checked Daily"
+    new_title = f"Chipotle Promo Codes ({my}) — Rewards, Student Discount & Ways to Save, Checked Daily"
     text, n = re.subn(r"Chipotle Promo Codes \([A-Z][a-z]+ \d{4}\) — [^\"<]+", new_title, text)
     if n < 3:
         print(f"WARNING: title string replaced in {n} places (expected >=3)")
 
     # 6) Meta descriptions (name/og/twitter + schema description share the build template)
-    desc = (f"{count} Chipotle promo codes &amp; offers for {my} — Boorito $6 entrée, $0 delivery Nov 1, "
-            f"free Rewards offers and more, checked daily against Chipotle's official terms.")
+    desc = (f"{count} Chipotle promo codes &amp; offers for {my} — free chips &amp; guac for new Rewards members, "
+            f"1,000 student bonus points, a birthday reward and more, checked daily against Chipotle's official terms.")
     desc_json = desc.replace("&amp;", "&")
     text = re.sub(r'(<meta name="description" content=")[^"]*(")', rf"\g<1>{desc}\g<2>", text)
     text = re.sub(r'(<meta property="og:description" content=")[^"]*(")', rf"\g<1>{desc}\g<2>", text)
