@@ -151,6 +151,23 @@
    "source_url": null,
    "tag": "Community reported",
    "terms": "Ends Oct 31, 2026 · capped at 9,000 redemptions, which may already be reached · we have not verified this one at checkout ourselves — worth a try, not guaranteed"
+  },
+  {
+   "active": true,
+   "benefit": "$0 delivery fee on orders placed on chipotle.com or in the Chipotle app with code CYBER26.",
+   "checked": "2026-11-26",
+   "chip": {
+    "class": "status-ending",
+    "text": "Starts Fri Nov 27"
+   },
+   "code": "CYBER26",
+   "headline": "$0 Delivery Fee — Cyber Weekend with Code CYBER26",
+   "id": "cyber26-2026",
+   "kind": "code",
+   "source_label": "Chipotle newsroom, Nov 20",
+   "source_url": "https://newsroom.chipotle.com/index.php?s=20295&item=122902",
+   "tag": "Promo code",
+   "terms": "Nov 27–30, 2026 · $10+ USD ($12+ CAD) before tax and fees · app/web only · US + Canada · other delivery/service fees still apply"
   }
  ],
  "site": "chipotlecoupons.us"
